@@ -27,11 +27,11 @@ class Owner
 
 #Owner's Associated Instance Methods
   def cats
-    Cat.all.select { |cats| cat.owner == cats }
+    Cat.all.select { |cat| cat.owner == self }
   end
 
   def dogs
-    Dog.all.select { |dogs| dog.owner == dogs }
+    Dog.all.select { |dog| dog.owner == self }
   end
 
   def buy_cat
