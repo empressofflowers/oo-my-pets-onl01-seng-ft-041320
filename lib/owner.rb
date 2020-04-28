@@ -2,12 +2,12 @@ class Owner
   attr_reader :name, :species
   @@all = []
 
-  def initialize name
-    @name = name
+  def initialize
+    @species
     @@all << self
   end
   def name
-    @name = self.name 
+    @name = self.name
   end
 
   def species
