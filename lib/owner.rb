@@ -24,4 +24,10 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+
+#Owner's Associated Instance Methods
+  def cats
+    self.cats.all
+  end
+
 end
