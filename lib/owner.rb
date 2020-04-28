@@ -27,7 +27,7 @@ class Owner
 
 #Owner's Associated Instance Methods
   def cats
-    self.cats.all
+    self.cats.collect {|owner| self.cats = owner}
   end
 
 end
