@@ -9,14 +9,6 @@ class Owner
     @@all << self
   end
 
-  def name
-    name = self.name
-  end
-
-  def species
-    species = self.species
-  end
-
   def say_species
     "I am a #{species}."
   end
