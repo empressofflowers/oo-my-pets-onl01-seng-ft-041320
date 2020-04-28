@@ -27,11 +27,11 @@ class Owner
 
 #Owner's Associated Instance Methods
   def cats
-    Cat.all.select { |cats| cats.owner == cats }
+    Cat.all.select { |cats| cat.owner == cats }
   end
 
   def dogs
-    Dog.all.select { |dogs| dogs.owner == dogs }
+    Dog.all.select { |dogs| dog.owner == dogs }
   end
 
   def buy_cat
@@ -43,6 +43,6 @@ class Owner
   end
 
   def walk_dogs
-    
+
   end
 end
